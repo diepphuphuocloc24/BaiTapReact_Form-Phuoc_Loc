@@ -5,17 +5,17 @@ const Header = () => {
         <>
             <header>
                 <div className="container mx-auto z-10 flex justify-between items-center py-6 text-white">
-                    <div className="text-3xl font-bold tracking-widest">
-                        <span className="text-indigo-500">Loc</span>
+                    <div className="text-4xl font-bold tracking-widest">
+                        <span className="text-amber-400">Loc</span>
                         Language
                     </div>
 
                     <nav>
-                        <ul className="flex space-x-8 text-lg font-semibold">
+                        <ul className="flex justify-between items-center gap-12 text-lg font-semibold">
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-indigo-300 transform hover:scale-105 transition-all duration-300"
+                                    className="hover:text-amber-400 transform hover:scale-105 transition-all duration-300"
                                 >
                                     Trang chủ
                                 </a>
@@ -23,7 +23,7 @@ const Header = () => {
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-indigo-300 transform hover:scale-105 transition-all duration-300"
+                                    className="hover:text-amber-400 transform hover:scale-105 transition-all duration-300"
                                 >
                                     Portfolio
                                 </a>
@@ -31,7 +31,7 @@ const Header = () => {
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-indigo-300 transform hover:scale-105 transition-all duration-300"
+                                    className="hover:text-amber-400 transform hover:scale-105 transition-all duration-300"
                                 >
                                     Khóa học
                                 </a>
@@ -39,7 +39,7 @@ const Header = () => {
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-indigo-300 transform hover:scale-105 transition-all duration-300"
+                                    className="hover:text-amber-400 transform hover:scale-105 transition-all duration-300"
                                 >
                                     Liên hệ
                                 </a>
@@ -48,12 +48,15 @@ const Header = () => {
                     </nav>
 
                     <div className="flex items-center space-x-3">
-                        <span>Xin chào, Phước Lộc</span>
-                        <img
-                            src="/img/avatar.png"
-                            alt="avatar"
-                            className="w-10 h-10 rounded-full border-2 border-white"
-                        />
+                        <p className="text-white font-medium text-lg">
+                            Xin chào,
+                            <span className="text-amber-400 font-semibold hover:text-amber-300 transition-colors duration-300">
+                                Phước Lộc
+                            </span>
+                        </p>
+                        <div className="w-15 h-15 border-2 border-amber-500 rounded-full overflow-hidden">
+                            <img src="./img/avatarLogo.jpg" alt="avatar" className="w-full h-full transition-all duration-300 hover:scale-110 cursor-pointer" />
+                        </div>
                     </div>
                 </div>
             </header>

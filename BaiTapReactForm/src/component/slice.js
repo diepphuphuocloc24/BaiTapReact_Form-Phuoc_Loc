@@ -1,16 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const studentSlice = createSlice({
-  name: "student",
+  name: "studentRegister",
   initialState: {
     students: [],
   },
   reducers: {
-    addStudent: (state, action) => {
+    addStudentRegister: (state, action) => {
       state.students.push(action.payload);
     },
   },
 });
 
-export const { addStudent } = studentSlice.actions;
+export const { addStudentRegister } = studentSlice.actions;
+
 export default studentSlice.reducer;
